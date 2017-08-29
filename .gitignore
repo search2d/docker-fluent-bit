@@ -1,0 +1,4 @@
+/.env
+/vendor
+/out_cwlout.h
+/out_cwlout.so
