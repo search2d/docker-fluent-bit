@@ -1,4 +1,4 @@
 /.env
 /vendor
-/out_cwlout.h
-/out_cwlout.so
+/out_cwl.h
+/out_cwl.so
