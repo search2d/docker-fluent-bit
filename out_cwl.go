@@ -28,8 +28,6 @@ func (s *cwlStream) add(e *cloudwatchlogs.InputLogEvent) {
 }
 
 func (s *cwlStream) flush() error {
-	log.Printf("%s flush", s.logStreamName)
-
 	if len(s.events) == 0 {
 		return nil
 	}
