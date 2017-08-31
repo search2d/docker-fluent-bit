@@ -4,7 +4,7 @@ run:
 	-v `pwd`:/data \
 	--env-file .env \
 	fluent/fluent-bit:0.11.17 \
-	/fluent-bit/bin/fluent-bit -e /data/out_cwl.so -c /data/out_cwl.conf
+	/fluent-bit/bin/fluent-bit -e /data/out_cwl.so -c /data/fluent-bit.conf
 
 build:
 	docker run --rm \
