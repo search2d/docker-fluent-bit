@@ -8,7 +8,7 @@ run:
 
 build:
 	docker run --rm \
-	-v `pwd`:/go/src/github.com/search2d/fluent-bit-cloudwatchlogs-output \
-	-w /go/src/github.com/search2d/fluent-bit-cloudwatchlogs-output \
+	-v `pwd`:/go/src/github.com/search2d/docker-fluent-bit \
+	-w /go/src/github.com/search2d/docker-fluent-bit \
 	golang:1.8.3-jessie \
 	go build -buildmode=c-shared -o out_cwl.so .
